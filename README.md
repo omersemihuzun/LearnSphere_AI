@@ -86,7 +86,8 @@
 - Projenin temel mimarisi, kullanılacak veritabanları (Graph ve Vector DB) ve teknoloji yığını tasarlandı.
 - Miro board üzerinden ilk sprintin planlaması yapılarak task dağılımları tamamlandı.
 
-*(Sprint tamamlandığında ekran görüntüleri ve geliştirme detayları eklenecektir.)*
+<img width="1369" height="1111" alt="Sprint_1" src="https://github.com/user-attachments/assets/730472b5-c1db-4281-9366-1cdf679cd91c" />
+
 
 ---
 </details>
