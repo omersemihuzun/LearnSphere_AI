@@ -8,13 +8,15 @@
 
 ## **Takım Üyeleri**
 
-| Ad | Görev |
-|------|-------|
-| **Ömer Semih Uzun** | Product Owner / Developer |
-| **Bahar Karakaş** | Scrum Master / Developer |
-| **Gülistan Ergün** | Developer |
-| **Mevlüt Uçar** | Developer |
-| **Sude Tuğlu** | Developer |
+| | İsim | Rol | GitHub | LinkedIn |
+| :---: | :--- | :--- | :---: | :---: |
+| <img src="https://github.com/omersemihuzun.png" width="50" height="50" style="border-radius: 50%;"> | **Ömer Semih Uzun** | Product Owner - Developer | [@omersemihuzun](https://github.com/omersemihuzun) | [in/omer-semih-uzun](https://www.linkedin.com/in/omer-semih-uzun/) |
+| <img src="https://github.com/baharkarakas.png" width="50" height="50" style="border-radius: 50%;"> | **Bahar Karakaş** | Scrum Master - Developer | [@baharkarakas](https://github.com/baharkarakas) | [in/bahar-karakaş](https://www.linkedin.com/in/bahar-karakaş) |
+| <img src="https://github.com/gulistanergun.png" width="50" height="50" style="border-radius: 50%;"> | **Gülistan Ergün** | Developer | [@gulistanergun](https://github.com/gulistanergun) | [in/gulistanergun](https://www.linkedin.com/in/gulistanergun/) |
+| <img src="https://github.com/mevlutucar.png" width="50" height="50" style="border-radius: 50%;"> | **Mevlüt Uçar** | Developer | [@mevlutucar](https://github.com/mevlutucar) | [in/mevlutucar](https://www.linkedin.com/in/mevlutucar) |
+| <img src="https://github.com/tuglusude.png" width="50" height="50" style="border-radius: 50%;"> | **Sude Tuğlu** | Developer | [@tuglusude](https://github.com/tuglusude) | [in/sudetuğlu](https://www.linkedin.com/in/sudetu%C4%9Flu) |
+
+> Roller bootcamp boyunca sabittir; PO ve SM dahil herkes kod yazar. Ekip içi iletişim kuralı: birincil SM Bahar Karakaş, yedek PO Ömer Semih Uzun.
 
 ---
 
