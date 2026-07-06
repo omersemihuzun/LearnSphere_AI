@@ -75,6 +75,12 @@
 
 ---
 
+## **Proje Araştırma ve Mimari Raporu**
+
+[Kapsamlı MVP ve Mimari Rapor (Google Docs)](https://docs.google.com/document/d/1AtllGqbLH81jMio79RQSs12_npCYeZcP7uGVlPxOabE/edit?tab=t.0)
+
+---
+
 ## **Sprints**
 
 <details>
@@ -132,7 +138,7 @@ python -m uvicorn app.main:app --reload --port 8080
 
 ### 5. Veri Erişimi ve Baseline Model (Yapay Zeka)
 - Sprint 1'de **HLR (Half-Life Regression)** Unutma Eğrisi modeli üzerine çalışıldı.
-- `data-science` klasöründe sentetik test verisi (`learning_logs.csv`) üretilerek kavram zorluğuna göre bir *Forgetting Curve* modeli (baseline) oluşturuldu. Arama/Filtreleme özellikleri entegre edildi.
+- [`data-science/sprint_1`](https://github.com/omersemihuzun/LearnSphere_AI/tree/main/data-science/sprint_1) klasöründe sentetik test verisi (`learning_logs.csv`) üretilerek kavram zorluğuna göre bir *Forgetting Curve* modeli (baseline) oluşturuldu. Arama/Filtreleme özellikleri entegre edildi.
 
 ### 6. Definition of Done (DoD)
 - Kod test edildi ve hata fırlatmadan ayağa kalktı.
