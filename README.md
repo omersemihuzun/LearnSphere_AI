@@ -69,6 +69,18 @@
 ---
 </details>
 
+## **İş Modeli (Yalın Kanvas)**
+
+LearnSphere AI'ın pazar uyumunu ve projenin sürdürülebilirliğini göstermek amacıyla hazırladığımız 9 Bloklu Yalın Kanvas (Lean Canvas) aşağıdadır:
+
+| Problem | Çözüm | Benzersiz Değer | Rekabet Avantajı | Hedef Kitle |
+|:---|:---|:---|:---|:---|
+| **1.** Dağınık öğrenme süreci (ChatGPT, YouTube arası kopukluk).<br><br>**2.** Not almanın manuel ve yorucu olması (sürtünme).<br><br>**3.** Öğrenilen bilgilerin zamanla unutulması. | **1.** Chrome eklentisiyle arka planda otonom veri toplama.<br><br>**2.** Neo4j ile ilişkisel ve görsel Zihin Haritası (Knowledge Graph).<br><br>**3.** HLR/FSRS algoritmalarıyla otonom quizler. | **"Sıfır Sürtünme" (Zero Friction):**<br><br>Kullanıcı öğrenirken ekstra hiçbir çaba sarf etmez, sistem arka planda kendi kendine ikinci bir beyin inşa eder. | **1.** GAAMA ve LECTOR mimarileri sayesinde semantik çakışmaları anlayan üst düzey kişiselleştirme.<br><br>**2.** Yerel modellerle (Offline AI) "Privacy-First" altyapı. | **1.** Kendi kendine öğrenenler (Self-learners).<br><br>**2.** Yeni teknolojiler öğrenen yazılımcılar.<br><br>**3.** Araştırmacı ve öğrenciler. |
+| **Alternatifler:** Notion, Obsidian, Anki. | **Kilit Metrikler:** Aktif node sayısı, quiz tamamlanma oranı. | | **Kanallar:** Chrome Web Store, Yazılımcı toplulukları, Hackathonlar. | **Erken Benimseyenler:** Bootcamp katılımcıları, Junior Geliştiriciler. |
+| **Maliyet Yapısı:** Bulut sunucu giderleri (Neo4j, FastAPI hosting). Sprint 2'de lokal modellere geçişle düşürülen LLM maliyetleri. | | | | **Gelir Kaynakları:** Temel özellikler için ücretsiz (Freemium), bulut senkronizasyonu ve gelişmiş ajanlar için aylık abonelik modeli. |
+
+---
+
 ## **Product Backlog URL**
 
 [Miro Backlog Board](https://miro.com/app/board/uXjVHCRzr6Q=/?share_link_id=571188315568)
@@ -127,7 +139,16 @@ Takım içi iletişim ve günlük planlamalar (Daily Scrum) WhatsApp üzerinden 
 
 ![Daily Scrum WhatsApp Kesiti](images/whatsapp.png)
 
-### 5. Ortam Kurulumu & Tekrar Üretilebilirlik
+### 5. Sprint Review (Değerlendirme)
+**Katılımcılar:** Ömer Semih Uzun, Bahar Karakaş, Gülistan Ergün, Mevlüt Uçar, Sude Tuğlu
+- **Alınan Kararlar:** Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir.
+
+### 6. Sprint Retrospective (Geriye Dönük Değerlendirme)
+- Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
+- Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı.
+- Unit test'ler için ayrılan efor/saat arttırılmalı.
+
+### 7. Ortam Kurulumu & Tekrar Üretilebilirlik
 Proje şu şekilde çalıştırılmalıdır:
 ```bash
 cd backend
@@ -136,15 +157,15 @@ pip install -r requirements.txt
 python -m uvicorn app.main:app --reload --port 8080
 ```
 
-### 5. Veri Erişimi ve Baseline Model (Yapay Zeka)
+### 8. Veri Erişimi ve Baseline Model (Yapay Zeka)
 - Sprint 1'de **HLR (Half-Life Regression)** Unutma Eğrisi modeli üzerine çalışıldı.
 - [`data-science/sprint_1`](https://github.com/omersemihuzun/LearnSphere_AI/tree/main/data-science/sprint_1) klasöründe sentetik test verisi (`learning_logs.csv`) üretilerek kavram zorluğuna göre bir *Forgetting Curve* modeli (baseline) oluşturuldu. Arama/Filtreleme özellikleri entegre edildi.
 
-### 6. Definition of Done (DoD)
+### 9. Definition of Done (DoD)
 - Kod test edildi ve hata fırlatmadan ayağa kalktı.
 - FastAPI backend ve React frontend entegre bir şekilde birbirine bağlandı.
 
-### 7. Uygulama Ekran Görüntüleri
+### 10. Uygulama Ekran Görüntüleri
 > *Şu an projemizden alınan en güncel arayüz görüntüleri aşağıdadır:*
 
 ![Ana Zihin Haritası Görüntüsü](images/ui-harita.png)
