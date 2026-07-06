@@ -145,7 +145,7 @@ Takım içi iletişim ve günlük planlamalar (Daily Scrum) WhatsApp üzerinden 
 
 ### 6. Sprint Retrospective (Geriye Dönük Değerlendirme)
 - Takım içindeki görev dağılımıyla ilgili düzenleme yapılması kararı alınmıştır.
-- Tahmin puanları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı.
+- Miro üzerindeki görevlerin öncelik (priority) durumları gözden geçirilmeli ve sprint planlama toplantılarında gerekli geri bildirimlerin developer'lar tarafından verildiğine emin olunmalı.
 - Unit test'ler için ayrılan efor/saat arttırılmalı.
 
 ### 7. Ortam Kurulumu & Tekrar Üretilebilirlik
