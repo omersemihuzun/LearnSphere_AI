@@ -111,8 +111,7 @@ LearnSphere AI'ın pazar uyumunu ve projenin sürdürülebilirliğini göstermek
 ### 2. Sprint Planı ve Backlog
 - **Puanlama:** İşler görevlere (task) ayrıldı ve efor dizisiyle puanlandı.
 - **Odak (Focus):** Altyapı (FastAPI + Neo4j) ve Veri Bilimi temel modeli.
-
-<img width="1369" height="1111" alt="Sprint_1" src="https://github.com/user-attachments/assets/730472b5-c1db-4281-9366-1cdf679cd91c" />
+<img width="1445" height="1216" alt="Sprint_1_Last" src="https://github.com/user-attachments/assets/7d42c8f2-fc55-49d4-b904-027dcb998a5f" />
 
 ### 3. Sprint 1 Zaman Çizelgesi (Gantt Chart)
 Aşağıdaki çizelge, 14 günlük Sprint 1 sürecimizin günlük takvimini göstermektedir:
