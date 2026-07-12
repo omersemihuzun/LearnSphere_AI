@@ -185,5 +185,10 @@ Jürinin en çok dikkat edeceği "gizlilik" ve "bağımsızlık" kuralları gere
 2. **Koleksiyon Güncellemesi:** Yerel modellere geçişle birlikte Qdrant vektör veritabanımız 384 boyutlu vektörleri destekleyecek şekilde yeniden optimize edilecektir.
 3. **Ekip Dağılımı:** Ön yüz ve arka yüz bileşenlerindeki son rütuşlar Bahar, Mevlüt ve Sude tarafından koordine edilecektir.
 
+### 4. Daily Scrum Notları
+Takım içi iletişim ve günlük planlamalar (Daily Scrum) WhatsApp üzerinden yapılmıştır. Günlük iş dağılımlarımızdan örnek bir kesit aşağıdadır:
+<img width="1292" height="1404" alt="sprint_2_gorusme" src="https://github.com/user-attachments/assets/43fe9f3a-1ade-4011-a699-d586f62e51ad" />
+
+
 ---
 </details>
