@@ -224,12 +224,6 @@ Sprint 3 görev dağılımı gerçekleştirilmiş ve ekip üyelerinin sorumluluk
 ---
 </details>
 
-<details>
-<summary><strong>Repo Hakkında Önemli Not</strong></summary>
-
----
+## Repo Hakkında Önemli Not
 
 Takım 20 olarak, **LearnSphere_AI reposuna, nihai dosyalarımızı/geliştirmelerimizi eklemekteyiz.** LearnSphere AI projemizin, günlük geliştirmelerine, [Buradaki Repodan](https://github.com/omersemihuzun/Yztatest) ulaşabilirsiniz.
-
----
-</details>
