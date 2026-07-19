@@ -1,7 +1,9 @@
 from fastapi import APIRouter, Depends
+from pydantic import BaseModel
 from app.services.graph_service import GraphService
 from app.db.neo4j_client import get_neo4j_driver
 from app.core.logging import get_logger
+
 
 logger = get_logger(__name__)
 router = APIRouter(prefix="/api/v1", tags=["Graph"])
@@ -63,3 +65,41 @@ async def delete_source(
 ):
     await service.delete_session(session_id)
     return {"status": "deleted", "session_id": session_id}
+
+
+class QuizSubmitPayload(BaseModel):
+    concept_name: str
+    score: float
+
+
+@router.post(
+    "/quiz/submit",
+    summary="Quiz Sonucunu Gonder",
+    description="Kullanicinin cozdugu quizin sonucuna gore FSRS parametrelerini (Stabilite/Zorluk) gunceller."
+)
+async def submit_quiz_result(
+    payload: QuizSubmitPayload,
+    service: GraphService = Depends(get_graph_service),
+):
+    return await service.update_concept_after_quiz(
+        concept_name=payload.concept_name,
+        score=payload.score
+    )
+
+from typing import List, Dict, Any
+
+class ImportPayload(BaseModel):
+    nodes: List[Dict[str, Any]]
+    edges: List[Dict[str, Any]]
+
+@router.post(
+    "/graph/import",
+    summary="Grafiği İçe Aktar",
+    description="JSON yedeğinden gelen düğüm ve ilişkileri Neo4j'ye yazar."
+)
+async def import_graph_endpoint(
+    payload: ImportPayload,
+    service: GraphService = Depends(get_graph_service),
+):
+    await service.import_graph_data(payload.model_dump())
+    return {"status": "success", "imported_nodes": len(payload.nodes)}
