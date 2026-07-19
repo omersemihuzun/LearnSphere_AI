@@ -16,7 +16,7 @@
 | <img src="https://github.com/mevlutucar.png" width="50" height="50" style="border-radius: 50%;"> | **Mevlüt Uçar** | Developer | [@mevlutucar](https://github.com/mevlutucar) | [in/mevlutucar](https://www.linkedin.com/in/mevlutucar) |
 
 
-> Roller bootcamp boyunca sabittir; PO ve SM dahil herkes kod yazar. Ekip içi iletişim kuralı: birincil SM Bahar Karakaş, yedek PO Ömer Semih Uzun.
+> Roller bootcamp boyunca sabittir; PO ve SM dahil herkes kod yazar. Ekip içi iletişim kuralı: birincil SM Bahar Karakaş, PO Ömer Semih Uzun.
 
 ---
 
@@ -139,7 +139,7 @@ Takım içi iletişim ve günlük planlamalar (Daily Scrum) WhatsApp üzerinden 
 ![Daily Scrum WhatsApp Kesiti](images/whatsapp.png)
 
 ### 5. Sprint Review (Değerlendirme)
-**Katılımcılar:** Ömer Semih Uzun, Bahar Karakaş, Gülistan Ergün, Mevlüt Uçar, Sude Tuğlu
+**Katılımcılar:** Ömer Semih Uzun, Bahar Karakaş, Gülistan Ergün, Mevlüt Uçar
 - **Alınan Kararlar:** Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir.
 
 ### 6. Sprint Retrospective (Geriye Dönük Değerlendirme)
@@ -183,11 +183,23 @@ Jürinin en çok dikkat edeceği "gizlilik" ve "bağımsızlık" kuralları gere
 
 1. **Yerel Embedding Modelleri:** Vektör oluşturma işlemleri için dışarıya (Google API) istek atmak yerine, `langchain-huggingface` üzerinden `sentence-transformers/all-MiniLM-L6-v2` yerel modeli kullanılacaktır. Böylece kullanıcı verileri internete sızmayacaktır.
 2. **Koleksiyon Güncellemesi:** Yerel modellere geçişle birlikte Qdrant vektör veritabanımız 384 boyutlu vektörleri destekleyecek şekilde yeniden optimize edilecektir.
-3. **Ekip Dağılımı:** Ön yüz ve arka yüz bileşenlerindeki son rütuşlar Bahar, Mevlüt ve Sude tarafından koordine edilecektir.
+3. **Ekip Dağılımı:** Ön yüz ve arka yüz bileşenlerindeki son rütuşlar Bahar, Mevlüt ve Gülistan tarafından koordine edilecektir.
 
 ### 4. Daily Scrum Notları
 Takım içi iletişim ve günlük planlamalar (Daily Scrum) WhatsApp üzerinden yapılmıştır. Günlük iş dağılımlarımızdan örnek bir kesit aşağıdadır:
 <img width="1292" height="1404" alt="sprint_2_gorusme" src="https://github.com/user-attachments/assets/43fe9f3a-1ade-4011-a699-d586f62e51ad" />
+
+Sprint 2 bitmeden önce, Sprint 3 için geçerli olacak görev dağılımları için gerçekleştirdiğimiz 2 ayrı görüşme aşağıdadır:
+
+Görüşme 1:
+<img width="1690" height="1175" alt="Sprint_3_Gorusme_1" src="https://github.com/user-attachments/assets/e650dc64-f538-472e-8def-63e13decc795" />
+
+Görüşme 2:
+<img width="1600" height="752" alt="Sprint_3_Gorusme_2 png" src="https://github.com/user-attachments/assets/d76dc956-f178-4db3-ae24-01b612a43559" />
+
+Sprint 2'de tamamlanan ve devam etmekte olan görevlere ait görsel aşağıdadır:
+<img width="1306" height="1237" alt="Sprint_2_Miro" src="https://github.com/user-attachments/assets/15e656ae-5d39-441f-8eb0-7a4b1680f10b" />
+
 
 
 ---
