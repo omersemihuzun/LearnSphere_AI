@@ -192,3 +192,22 @@ Takım içi iletişim ve günlük planlamalar (Daily Scrum) WhatsApp üzerinden 
 
 ---
 </details>
+
+<details>
+<summary><strong>Sprint 3: Quiz Döngüsü ve Bilgi Grafiği Geliştirmeleri</strong></summary>
+
+---
+
+### Sprint 3 Görev Dağılımı
+
+Sprint 3 görev dağılımı gerçekleştirilmiş ve ekip üyelerinin sorumlulukları Miro panosu üzerinden belirlenmiştir.
+
+- **Ömer Semih Uzun:** Quiz soru üretimi
+- **Mevlüt Uçar:** Quiz arayüzü oluşturulması ve ChatGPT/Gemini geçmişinin içe aktarılması
+- **Gülistan Ergün:** Öğrenme yolu oluşturulması ve konu kümelerinin hazırlanması
+- **Bahar Karakaş:** STUDIED geçmişinin oluşturulması ve düğüm sabitleme
+
+![Sprint 3 Görev Dağılımı](images/sprint-3-gorev-dagilimi.png)
+
+---
+</details>
