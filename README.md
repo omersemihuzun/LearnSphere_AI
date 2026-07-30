@@ -278,6 +278,7 @@ Görüşme kesiti 3:
 
 ### 5. Sprint Review (Değerlendirme)
 **Katılımcılar:** Ömer Semih Uzun, Bahar Karakaş, Gülistan Ergün, Mevlüt Uçar
+
 **Alınan Kararlar:**
 1. **Stratejik Teslimat Planlaması:** Proje teslim tarihi olan 2 Ağustos'a kadar çekirdek özelliklerin (Harita, Rota, Quiz ve Skorlama) tamamlanmasına odaklanılmıştır. Projenin derece alması hedeflenmiş ve derece sonrası geliştirme aşamaları için bazı görevler bilinçli olarak ileri bir tarihe (Backlog/In Progress) bırakılmıştır.
 2. **Öğrenme Yolu Kararı:** Öğrenme yolu mekanizmasının yalnızca LLM'e bağlı kalmaması, haritadaki var olan kavramlar için Neo4j shortest-path algoritması kullanması, harita dışı yeni hedefler için LLM'den önkoşul üretip graf ile karşılaştırması kararlaştırıldı ve uygulandı.
