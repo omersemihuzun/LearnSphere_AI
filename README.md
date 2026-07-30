@@ -230,7 +230,8 @@ Sprint 3 görev dağılımı gerçekleştirilmiş ve ekip üyelerinin sorumluluk
 ### 2. Sprint Planı ve Backlog
 - **Puanlama:** İşler görevlere (task) ayrıldı ve efor dizisiyle puanlandı.
 - **Odak (Focus):** MVP oluşturma
-<img width="1272" height="1294" alt="Sprint-3-Miro" src="https://github.com/user-attachments/assets/9012041d-e11c-496d-a0e1-f0dd566b13f1" />
+<img width="1231" height="1293" alt="Sprint-3-Miro" src="https://github.com/user-attachments/assets/6f59df34-558a-4b74-a118-fcf59fe9d346" />
+
 
 
 
@@ -308,10 +309,22 @@ Görüşme kesiti 3:
 1.  MVP oluşturma tamamlandı.
 
 ### 8. Uygulama Ekran Görüntüleri
+*Not: Ürün görselleri farklı tarihlerde alınmıştır ve arayüz farklılıkları olabilir. En güncel arayüz, ilk görseldekidir.*
 > *Şu an projemizden alınan en güncel arayüz görüntüleri aşağıdadır:*
 
 <img width="1714" height="1926" alt="Urun-Gorseli-1" src="https://github.com/user-attachments/assets/628cef08-a427-4918-9e75-9694efa4f881" />
 
+<img width="1569" height="809" alt="Urun-Gorseli-2" src="https://github.com/user-attachments/assets/93cabd4d-27bf-435d-a707-21b43c3bdf86" />
+
+<img width="1209" height="754" alt="Urun-Gorseli-3" src="https://github.com/user-attachments/assets/c42c1a3d-ff96-4360-a229-0202bdd7c50b" />
+
+<img width="1600" height="862" alt="Urun-Gorseli-5" src="https://github.com/user-attachments/assets/bb2f3a07-802b-4c5e-89f5-fa43044fa74a" />
+
+<img width="1600" height="860" alt="Urun-Gorseli-6" src="https://github.com/user-attachments/assets/6d46371a-962b-471b-87f9-a1566d32fff0" />
+
+<img width="757" height="714" alt="Urun-Gorseli-7" src="https://github.com/user-attachments/assets/ad61baf1-a762-457e-9f92-db69048faf39" />
+
+<img width="422" height="456" alt="Urun-Gorseli-4" src="https://github.com/user-attachments/assets/e7ae80b4-3cc4-431b-94bc-d3a6bafdc1c6" />
 
 
 
