@@ -206,7 +206,7 @@ Sprint 2'de tamamlanan ve devam etmekte olan görevlere ait görsel aşağıdad�
 </details>
 
 <details>
-<summary><strong>Sprint 3: Quiz Döngüsü ve Bilgi Grafiği Geliştirmeleri</strong></summary>
+<summary><strong>Sprint 3: MVP Oluşturma ve Proje Teslimi</strong></summary>
 
 ---
 
@@ -214,12 +214,104 @@ Sprint 2'de tamamlanan ve devam etmekte olan görevlere ait görsel aşağıdad�
 
 Sprint 3 görev dağılımı gerçekleştirilmiş ve ekip üyelerinin sorumlulukları Miro panosu üzerinden belirlenmiştir.
 
-- **Ömer Semih Uzun:** Quiz soru üretimi
-- **Mevlüt Uçar:** Quiz arayüzü oluşturulması ve ChatGPT/Gemini geçmişinin içe aktarılması
+- **Ömer Semih Uzun:** Quiz soru üretimi ve Quiz arayüzü oluşturulması
+- **Mevlüt Uçar:** Quiz arayüzü oluşturulması, ChatGPT/Gemini geçmişinin içe aktarılması ve LearnSphere AI öğrenme geçmişi sıfırlama
 - **Gülistan Ergün:** Öğrenme yolu oluşturulması ve konu kümelerinin hazırlanması
-- **Bahar Karakaş:** STUDIED geçmişinin oluşturulması ve düğüm sabitleme
+- **Bahar Karakaş:** Beyin skoru hazırlama
 
-![Sprint 3 Görev Dağılımı](images/sprint-3-gorev-dagilimi.png)
+### 1. Kullanıcı Hikayeleri (User Stories) & Kabul Kriterleri
+1.	**Quiz Soru Üretimi ve Arayüzü:** Kullanıcı, harita ekranı üzerinden öğrendiği kavramlarla ilgili otomatik üretilen testleri çözebilmelidir. Kabul Kriteri: Sistem, arka planda LLM kullanarak düğümlere özel sorular üretmeli ve quiz arayüzü üzerinden kullanıcıya sunmalıdır.
+2.	**Öğrenme Yolu (Prerequisite Path):** Kullanıcı, mevcut bir kavrama tıkladığında veya yeni bir hedef belirlediğinde sistem ona bir öğrenme rotası çıkarmalıdır. Kabul Kriteri: Mevcut kavramlar için Neo4j shortest-path kullanılmalı, yeni hedefler için LLM ile ön koşullar belirlenip haritadaki durumu (sağlam, zayıf vb.) renk kodlarıyla vurgulanmalıdır.
+3.	**Konu Kümeleri (Clustering):** Kullanıcı, öğrendiği konuları liste yapısında ve gruplanmış olarak görebilmelidir. Kabul Kriteri: Kümeler tarih odaklı (güncelden eskiye) sıralanmalı, listeden seçilen küme aktif görünürken aradaki diğer bağlar soluklaşmalıdır.
+4.	**Beyin Sağlığı Skoru:** Kullanıcı, genel öğrenme ve hatırlama performansını gösteren detaylı bir sağlık skoru paneli görmelidir. Kabul Kriteri: "Ortalama Hatırlama" ve "Sağlam Kavram Oranı" metrikleriyle 0-100 arası bir skor hesaplanıp, kırılımlarıyla birlikte arayüzde gösterilmelidir.
+5.	**Chat Geçmişi Aktarımı:** Kullanıcı, ChatGPT ve Gemini üzerindeki sohbet geçmişlerini sisteme aktarabilmelidir. Kabul Kriteri: İlgili platformlardaki geçmiş veriler başarılı bir şekilde arka plana (backend) gönderilip sisteme entegre edilebilmelidir.
+6.	**Geçmiş Yönetimi ve Temizleme:** Kullanıcı, token limitlerine takılmamak için öğrenme geçmişini sıfırlayabilmeli veya yedeğini alıp yükleyebilmelidir. Kabul Kriteri: Dışa/İçe aktar fonksiyonları çalışmalı ve tüm kaynakları silen "Sıfırla (Reset)" butonu sorunsuz işlev göstermelidir.
+
+### 2. Sprint Planı ve Backlog
+- **Puanlama:** İşler görevlere (task) ayrıldı ve efor dizisiyle puanlandı.
+- **Odak (Focus):** MVP oluşturma
+<img width="1272" height="1294" alt="Sprint-3-Miro" src="https://github.com/user-attachments/assets/9012041d-e11c-496d-a0e1-f0dd566b13f1" />
+
+
+
+### 3. Sprint 3 Zaman Çizelgesi (Gantt Chart)
+Aşağıdaki çizelge, 14 günlük Sprint 3 sürecimizin günlük takvimini göstermektedir:
+
+```mermaid
+gantt
+    dateFormat  YYYY-MM-DD
+    title Sprint 3 Günlük Zaman Çizelgesi (14 Gün)
+    
+    section Veri Yönetimi
+    Chat Geçmişi Aktarımı (Mevlüt)         :a1, 2026-07-20, 4d
+    Geçmiş Temizleme/Yedekleme (Mevlüt)    :a2, after a1, 4d
+    
+    section Harita & Rota
+    Öğrenme Yolu (Gülistan)                :b1, 2026-07-20, 5d
+    Konu Kümeleri (Gülistan)               :b2, after b1, 4d
+    
+    section Quiz & Skorlama
+    Quiz Soru Üretimi (Ö. Semih)           :c1, 2026-07-21, 4d
+    Quiz Arayüzü (Ö. Semih, Mevlüt)        :c2, after c1, 4d
+    Beyin Sağlığı Skoru (Bahar)            :c3, 2026-07-22, 6d
+    
+    section Sunum ve Kapanış
+    Proje Teslimi & Final Düzenlemeleri    :d1, 2026-07-31, 2d
+    Sprint Review & Retrospektif           :d2, after d1, 1d
+```
+### 4. Daily Scrum Notları
+Takım içi iletişim ve günlük planlamalar (Daily Scrum) WhatsApp üzerinden yapılmıştır. Günlük iş dağılımlarımızdan örnek kesitler aşağıdadır:
+
+Görüşme kesiti 1:
+
+<img width="928" height="2136" alt="Sprint-3-Gorusme-1" src="https://github.com/user-attachments/assets/7e87b96e-419e-4968-ba31-8fa32430b57b" />
+
+Görüşme kesiti 2:
+
+<img width="933" height="2136" alt="Sprint-3-Gorusme-2" src="https://github.com/user-attachments/assets/ef83df41-c722-4a74-974c-285170673f59" />
+
+Görüşme kesiti 3:
+
+<img width="871" height="787" alt="Sprint-3-Gorusme-3" src="https://github.com/user-attachments/assets/a8b46880-bc27-4ecd-9f11-4ecefdf8d4e5" />
+
+
+
+### 5. Sprint Review (Değerlendirme)
+**Katılımcılar:** Ömer Semih Uzun, Bahar Karakaş, Gülistan Ergün, Mevlüt Uçar
+**Alınan Kararlar:**
+1. **Stratejik Teslimat Planlaması:** Proje teslim tarihi olan 2 Ağustos'a kadar çekirdek özelliklerin (Harita, Rota, Quiz ve Skorlama) tamamlanmasına odaklanılmıştır. Projenin derece alması hedeflenmiş ve derece sonrası geliştirme aşamaları için bazı görevler bilinçli olarak ileri bir tarihe (Backlog/In Progress) bırakılmıştır.
+2. **Öğrenme Yolu Kararı:** Öğrenme yolu mekanizmasının yalnızca LLM'e bağlı kalmaması, haritadaki var olan kavramlar için Neo4j shortest-path algoritması kullanması, harita dışı yeni hedefler için LLM'den önkoşul üretip graf ile karşılaştırması kararlaştırıldı ve uygulandı.
+3. **Performans ve Token Optimizasyonu:** Yoğun kaynak kullanımında token limitlerine takılma riskine karşı "Geçmişi Sıfırlama (Reset)" ve "İçe/Dışa Aktar" özellikleri sisteme başarılı bir şekilde entegre edildi.
+4. **Kümeleme ve Skorlama:** Konu kümelerinin harita üzerinde liste biçiminde sunulması ve filtreleme yapması sağlandı. Beyin Sağlığı skorlamasının "Ortalama Hatırlama" ve "Sağlam Kavram Oranı" metrikleriyle hesaplanıp sisteme aktarımı tamamlandı.
+
+
+### 6. Sprint Retrospective (Geriye Dönük Değerlendirme)
+**Neleri İyi Yaptık?**
+1.	Ekip içi iletişim ve kod inceleme süreçleri oldukça hızlı işledi. Darboğaz yaratabilecek token/limit problemleri erken tespit edilip "Geçmiş Temizleme" aracı ile proje tesliminden önce hızlıca çözüldü.
+2.	Backend ve LLM entegrasyonu (Soru üretimi, Ön koşul yolu hesaplama) gibi zorlu mimariler başarıyla "Done" statüsüne çekildi.
+3.	2 Ağustos proje teslimi için doğru bir önceliklendirme yapılarak MVP (Minimum Viable Product) için en kritik özellikler tamamlandı.
+
+**Gelecek Hedeflerimiz ve Teslim Sonrası Planlar:**
+1.	Kısıtlı zaman sebebiyle bilinçli olarak durdurulan görevler (Örn: Chrome extension pasif takip), proje derece aldıktan sonraki geliştirme evresi için planlanmıştır.
+2.	**Backlog'dan Gelecek Sprintlere Aktarılacak Öncelikler:**
+     - Çok dilli embedding geçişine (paraphrase-multilingual) hazırlık yapılması.
+     - Ollama ile yerel kavram çıkarımının (Extraction) test edilmesi.
+     - Tek komut kurulum (docker-compose) ile demo altyapısının hazırlanması.
+     - Arayüzü zenginleştirecek Zaman Tüneli Slider'ı entegrasyonu.
+
+**Aksiyon Maddeleri (Action Items):**
+1.	2 Ağustos'taki son proje tesliminin gerçekleştirilmesi.
+2.	Proje değerlendirmesi/derece sürecinin ardından Backlog'daki High Priority (Yüksek Öncelikli) mimari geliştirmelere başlanması.
+
+### 7. Definition of Done (DoD)
+1.  MVP oluşturma tamamlandı.
+
+### 8. Uygulama Ekran Görüntüleri
+> *Şu an projemizden alınan en güncel arayüz görüntüleri aşağıdadır:*
+
+<img width="1714" height="1926" alt="Urun-Gorseli-1" src="https://github.com/user-attachments/assets/0a946a6d-ed29-4a6d-9f01-1bcee61fda34" />
+
+
 
 ---
 </details>
