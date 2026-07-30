@@ -310,7 +310,8 @@ Görüşme kesiti 3:
 ### 8. Uygulama Ekran Görüntüleri
 > *Şu an projemizden alınan en güncel arayüz görüntüleri aşağıdadır:*
 
-<img width="1714" height="1926" alt="Urun-Gorseli-1" src="https://github.com/user-attachments/assets/0a946a6d-ed29-4a6d-9f01-1bcee61fda34" />
+<img width="1714" height="1926" alt="Urun-Gorseli-1" src="https://github.com/user-attachments/assets/628cef08-a427-4918-9e75-9694efa4f881" />
+
 
 
 
