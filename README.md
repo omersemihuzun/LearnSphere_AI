@@ -230,9 +230,8 @@ Sprint 3 görev dağılımı gerçekleştirilmiş ve ekip üyelerinin sorumluluk
 ### 2. Sprint Planı ve Backlog
 - **Puanlama:** İşler görevlere (task) ayrıldı ve efor dizisiyle puanlandı.
 - **Odak (Focus):** MVP oluşturma
-<img width="1231" height="1293" alt="Sprint-3-Miro" src="https://github.com/user-attachments/assets/6f59df34-558a-4b74-a118-fcf59fe9d346" />
 
-
+<img width="1247" height="1297" alt="Sprint_3_Miro_Son" src="https://github.com/user-attachments/assets/5f425fb5-d32a-442c-83a7-b4870f97b0b9" />
 
 
 ### 3. Sprint 3 Zaman Çizelgesi (Gantt Chart)
@@ -274,6 +273,10 @@ Görüşme kesiti 2:
 Görüşme kesiti 3:
 
 <img width="871" height="787" alt="Sprint-3-Gorusme-3" src="https://github.com/user-attachments/assets/a8b46880-bc27-4ecd-9f11-4ecefdf8d4e5" />
+
+Proje teslimi öncesi son görüşme:
+
+<img width="1015" height="1222" alt="Sprint-3-Gorusme-4" src="https://github.com/user-attachments/assets/ca4eb53b-ee29-430c-9cbc-c18c9142bdda" />
 
 
 
@@ -330,6 +333,10 @@ Görüşme kesiti 3:
 
 ---
 </details>
+
+## Proje İnceleme/Tanıtım Videosu
+
+LearnSphere AI projemizin, inceleme/tanıtım videosuna; [Buradaki Linkten](https://youtu.be/X5buCA3nhGk?si=6ZrAujpNxLSU43q3) ulaşabilirsiniz.
 
 ## Repo Hakkında Önemli Not
 
