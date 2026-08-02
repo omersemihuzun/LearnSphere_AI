@@ -341,3 +341,5 @@ LearnSphere AI projemizin, inceleme/tanıtım videosuna; [Buradaki Linkten](http
 ## Repo Hakkında Önemli Not
 
 Takım 20 olarak, **LearnSphere_AI reposuna, nihai dosyalarımızı/geliştirmelerimizi eklemekteyiz.** LearnSphere AI projemizin, günlük geliştirmelerine, [Buradaki Repodan](https://github.com/omersemihuzun/Yztatest) ulaşabilirsiniz.
+
+> **Önemli Bilgi:** `data-science/` klasörü projenin çalışan hali ile bağlantılı değildir. Sprint 1'de yapılan deneysel bir HLR araştırmasıdır. Backend'de unutma eğrisi için tamamen farklı bir algoritma (FSRS) kullanılmaktadır.
